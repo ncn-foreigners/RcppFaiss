@@ -1,2 +1,2 @@
 PKG_CXXFLAGS = -I../inst/include $(shell "${R_HOME}/bin/Rscript" -e "Rcpp:::CxxFlags()")
-PKG_LIBS = -L$(brew --prefix faiss)/lib -lfaiss $(shell "${R_HOME}/bin/Rscript" -e "Rcpp:::LdFlags()")
+PKG_LIBS = -L/opt/homebrew/opt/faiss/lib -lfaiss $(shell "${R_HOME}/bin/Rscript" -e "Rcpp:::LdFlags()")
