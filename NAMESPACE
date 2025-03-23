@@ -1,0 +1,2 @@
+export(faiss_flat_search)
+importFrom(Rcpp, evalCpp)

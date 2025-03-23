@@ -1,0 +1,9 @@
+Package: RcppFaiss
+Version: 0.1.0
+Title: Rcpp Interface to FAISS
+Description: Provides an interface to the FAISS library using Rcpp.
+Author: Your Name
+Maintainer: Your Name <your.email@example.com>
+License: MIT
+Depends: R (>= 4.3.0), Rcpp
+LinkingTo: Rcpp
