@@ -1,3 +1,0 @@
-EXPORTS
-    _RcppFaiss_faiss_flat_search
-    R_init_RcppFaiss

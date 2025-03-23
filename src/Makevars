@@ -1,2 +1,0 @@
-PKG_CXXFLAGS = -I../inst/include $(shell "${R_HOME}/bin/Rscript" -e "Rcpp:::CxxFlags()")
-PKG_LIBS = -L../inst/lib/x64 -lfaiss -Wl,--export-all-symbols $(shell "${R_HOME}/bin/Rscript" -e "Rcpp:::LdFlags()")
