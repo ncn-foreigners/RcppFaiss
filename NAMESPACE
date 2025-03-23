@@ -1,3 +1,4 @@
 export(faiss_flat_search)
 importFrom(Rcpp, evalCpp)
 useDynLib(RcppFaiss)
+useDynLib(RcppFaiss, .registration = TRUE)
