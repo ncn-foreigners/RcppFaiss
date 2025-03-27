@@ -10,21 +10,18 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// faiss_flat_search
-List faiss_flat_search(NumericMatrix data, int k);
-RcppExport SEXP _RcppFaiss_faiss_flat_search(SEXP dataSEXP, SEXP kSEXP) {
+// test_faiss
+void test_faiss();
+RcppExport SEXP _RcppFaiss_test_faiss() {
 BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< NumericMatrix >::type data(dataSEXP);
-    Rcpp::traits::input_parameter< int >::type k(kSEXP);
-    rcpp_result_gen = Rcpp::wrap(faiss_flat_search(data, k));
-    return rcpp_result_gen;
+    test_faiss();
+    return R_NilValue;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_RcppFaiss_faiss_flat_search", (DL_FUNC) &_RcppFaiss_faiss_flat_search, 2},
+    {"_RcppFaiss_test_faiss", (DL_FUNC) &_RcppFaiss_test_faiss, 0},
     {NULL, NULL, 0}
 };
 
